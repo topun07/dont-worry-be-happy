@@ -1,2 +1,2 @@
-# dont-worry-be-happy
-stuff in which i dont know what im doing
+# Beginning My Profession
+Im starting a new journey in my career and these early codes are just the beginning.
