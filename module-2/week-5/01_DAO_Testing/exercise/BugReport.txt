@@ -1,0 +1,49 @@
+Bug 1
+-----
+Test that demonstrates problem:
+public void getTimesheetsByEmployeeId_with_valid_employee_id_returns_list_of_timesheets_for_employee()
+
+Expected output:
+3
+
+Actual output:
+2
+
+How did you fix this bug?
+
+
+Bug 2
+-----
+Test that demonstrates problem:
+public void getTimesheetsByProjectId_with_valid_project_id_returns_list_of_all_timesheets_for_project()
+
+Expected output:
+2
+
+Actual output:
+1
+
+How did you fix this bug?
+
+
+Bug 3
+-----
+Test that demonstrates problem:
+
+Expected output:
+
+Actual output:
+
+How did you fix this bug?
+
+
+Bug 4
+-----
+Test that demonstrates problem:
+
+Expected output:
+
+Actual output:
+
+How did you fix this bug?
+

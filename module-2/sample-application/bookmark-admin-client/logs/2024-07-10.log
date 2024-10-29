@@ -1,0 +1,4 @@
+2024-07-10T08:39:06.3015094 I/O error on POST request for "http://localhost:9000/login": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2024-07-10T08:39:32.3257288 I/O error on POST request for "http://localhost:9000/login": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2024-07-10T08:41:36.473133 I/O error on POST request for "http://localhost:9000/login": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+2024-07-10T08:54:49.7813126 I/O error on POST request for "http://localhost:9000/login": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
