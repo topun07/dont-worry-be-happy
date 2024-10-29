@@ -1,0 +1,66 @@
+html{
+    background: linear-gradient(to top right, #858c90, #bbb);
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+h2{
+        margin: 0px;
+        font-size: 1rem;
+        font-weight: bold;
+        padding-left: 8px;
+}
+section{
+    display: inline-block;
+    vertical-align: top;
+    background-color: #ddd;
+    width: 300px;
+    border-radius: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    ;
+}
+ul{
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+li{
+    background-color: white;
+    margin: 5px;
+    padding: 6px;
+    color: black;
+    font-size: .9rem;
+    border-radius: 2px;
+    box-shadow: 2px 4px #bbb;
+}
+a {
+    padding-left: 8px;
+    margin-top: 0px;
+    padding-top: 0px;
+    color: grey;
+    text-decoration-line: none;
+}
+span{
+    width: 35px;
+    height: 8px;    
+    border-radius: 3px;
+    display: inline-block;
+}
+.general{
+    background-color: orange;
+}
+.prep{
+    background-color: red;
+}
+.plumbing{
+    background-color: green;
+}
+.electrical{
+    background-color: blue;;
+}
+.finish{
+    background-color: violet;
+}

@@ -1,0 +1,39 @@
+body {
+  margin: 20px;
+  padding: 0
+}
+
+header {
+  background-color: #F0F0F0;
+  padding: 20px;
+}
+
+.logo {
+  width: 140px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a,
+a:visited {
+  color: #707070;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00AFEF;
+  text-decoration: underline;
+}

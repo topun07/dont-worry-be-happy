@@ -1,0 +1,41 @@
+
+body{
+    background-color: lightblue;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: nowrap;
+    text-align: center;
+}
+section{
+    text-align: center;
+    
+}
+h1{
+    text-align: center;
+    
+}
+.resized-image {
+    width: 300px;
+    height: auto;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#facts-section h2{
+    text-decoration: underline;
+}
+
+#quotes-section h2{
+    text-decoration: underline;
+}
+
+blockquote{
+    font-style: italic;
+}
+
+#links-section h2{
+    text-decoration: underline;
+}

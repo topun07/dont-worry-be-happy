@@ -1,0 +1,210 @@
+* {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: rgba(192, 192, 192, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h1#headline {
+    font-size: 4em;
+    margin-top: 0.15em;
+    margin-bottom: 0.15em;
+    color: #505355;
+    border-bottom: solid 1px black;
+}
+
+h2 {
+    font-size: 1.8em;
+    line-height: 1.45em;
+}
+
+h3 {
+    font-size: 1em;
+    color: #00ADEE;
+}
+
+header img {
+    height: 25px;
+}
+
+.student-gray {
+    color: #505355;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+#student-picture img {
+    border-radius: 50%;
+    width: 250px; /* Matching the 250x325 dimension */
+    height: 325px;
+}
+
+/* Define the Desktop Layout for #main-grid*/
+
+#main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equally sized columns */
+    grid-template-rows: auto auto auto auto; /* Four rows */
+    grid-template-areas:
+        "headline headline student-picture"
+        "student-quote student-quote student-picture"
+        "student-profile student-profile student-contact"
+        "experience-grid experience-grid experience-grid";
+    grid-column-gap: 50px; /* Column gap */
+    grid-row-gap: 20px; /* Row gap */
+    align-items: center; /* Vertically centers all content in grid cells */
+}
+
+/* Center the student-picture and student-contact*/
+#headline{
+    grid-area: headline;
+}
+
+#student-picture {
+    grid-area: student-picture;
+    text-align: center; /* Center text horizontally */
+}
+
+#student-picture img {
+    margin: 0 auto; /* Centers the image */
+}
+
+#student-quote{
+    grid-area: student-quote;
+}
+
+#student-profile{
+    grid-area: student-profile;
+}
+
+#student-contact {
+    grid-area: student-contact;
+    text-align: center; /* Center the contact information horizontally */
+}
+
+#experience-grid {
+    grid-area: experience-grid;
+}
+
+/* Define the Desktop Layout for #experience-grid */
+#experience-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equally sized columns */
+    grid-template-rows: auto auto auto; /* Three rows */
+    grid-template-areas:
+        "experience-code experience-code"
+        "experience-database experience-database"
+        "experience-web experience-design";
+    grid-column-gap: 50px; /* Column gap */
+    grid-row-gap: 20px; /* Row gap */
+}
+
+/* Assign Grid Areas to experience-grid Items */
+
+#experience-code {
+    grid-area: experience-code;
+}
+
+#experience-database {
+    grid-area: experience-database;
+}
+
+#experience-web {
+    grid-area: experience-web;
+}
+
+#experience-design {
+    grid-area: experience-design;
+}
+
+/* Create a Media Query for Tablets */
+
+@media (max-width: 1024px) {
+    /* Step 2: Update main-grid for tablet layout */
+    #main-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+        grid-template-rows: auto auto auto auto auto; /* Five rows */
+        grid-template-areas:
+            "headline headline"
+            "student-quote student-picture"
+            "student-quote student-contact"
+            "student-profile student-profile"
+            "experience-grid experience-grid";
+        grid-column-gap: 35px; /* Column gap for tablet */
+        grid-row-gap: 20px; /* Row gap for tablet */
+    }
+
+    /* Step 3: Update experience-grid for tablet layout */
+    #experience-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+        grid-template-rows: auto auto; /* Two rows */
+        grid-template-areas:
+            "experience-code experience-web"
+            "experience-database experience-design";
+        grid-column-gap: 20px; /* Column gap for tablet */
+        grid-row-gap: 20px; /* Row gap for tablet */
+    }
+}
+
+/* Create a Media Query for Phones */
+
+@media (max-width: 450px) {
+    /* Step 2: Update main-grid for phone layout */
+    #main-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column */
+        grid-template-rows: auto auto auto auto auto auto; /* Six rows */
+        grid-template-areas:
+            "headline"
+            "student-picture"
+            "student-contact"
+            "student-quote"
+            "student-profile"
+            "experience-grid";
+        grid-column-gap: 20px; /* Column gap for phone */
+        grid-row-gap: 15px; /* Row gap for phone */
+    }
+
+    /* Step 3: Update experience-grid for phone layout */
+    #experience-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column */
+        grid-template-rows: auto auto auto auto; /* Four rows */
+        grid-template-areas:
+            "experience-code"
+            "experience-web"
+            "experience-database"
+            "experience-design";
+        grid-column-gap: 15px; /* Column gap for phone */
+        grid-row-gap: 15px; /* Row gap for phone */
+    }
+
+    /* Centering elements for better phone layout */
+    #student-picture {
+        text-align: center;
+    }
+
+    #student-picture img {
+        margin: 0 auto;
+    }
+
+    #student-contact {
+        text-align: center;
+    }
+}

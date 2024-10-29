@@ -1,0 +1,117 @@
+body  {
+    background: linear-gradient(#858c90, #bbb);
+    font-size: 16px;
+    font-family: Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    white-space: nowrap;
+}
+
+section.list {
+    /* Layout */
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0 8px 8px 8px;
+    border-radius: 3px;
+    background-color: #ddd;
+}
+
+section.list h2 {
+   
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+section li {
+    border: 0px dashed red;
+    background-color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    box-shadow: #bbb 0 2px;
+    padding: 6px;
+    white-space: normal;
+}
+
+ul.cards {
+    list-style-type: none;
+    padding: 0px;
+}
+
+section.list a {
+    color: #999;
+    text-decoration: none;
+    display: block;
+}
+
+section.list a:hover {
+    background-color: rgba(33,130,186,0.25);
+}
+
+
+.label {
+    width: 35px;
+    height: 8px;
+    background-color: red;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.prep {
+    background-color: red;
+}
+
+.general {
+    background-color: orange;
+}
+
+.plumbing {
+    background-color: green;
+}
+
+.electrical {
+    background-color: blue;
+}
+
+.finish {
+    background-color: violet;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+header>h1,
+header>nav {
+    display: inline-block;
+    padding-right: 20px;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 0.8);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header>h1 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+header>nav {
+    font-size: .9rem;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 50px;
+}

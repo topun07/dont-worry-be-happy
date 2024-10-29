@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+html, body{
+  height: 100%;
+}
+
+body {
+  background-color: rgba(192, 192, 192, 0.1);
+  margin: 0;
+  display: flex;
+}
+
+aside {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  position: fixed;
+  height: 100vh;
+  border-right: 1px solid rgba(0, 173, 238, 0.4);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+aside img {
+  width: 120px;
+  height: auto;
+  display: inline-block;
+}
+
+aside nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+aside nav ul li {
+  margin: 15px 0;
+  border-bottom: 1px solid rgba(0, 173, 238, 0.4);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  width: 80%;
+  margin: 0 auto 15px auto;
+}
+
+aside nav ul li a {
+  text-decoration: none;
+  color: #00ADEE;
+  font-weight: bold;
+}
+
+aside nav ul li:first-child a {
+  text-decoration: underline;
+}
+
+aside nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin: 20px 20px 20px 220px;
+  padding: 20px;
+  width: calc(100% - 260px);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+header img {
+  max-width: 100%;
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+#placeholder {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#placeholder img.banner {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+section div {
+  width: 33%;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid rgba(170, 239, 135, 0.8);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+section div h2 {
+  font-size: 1.5rem;
+  color: #8CC36F;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+section div h2 i {
+  margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #888;
+}

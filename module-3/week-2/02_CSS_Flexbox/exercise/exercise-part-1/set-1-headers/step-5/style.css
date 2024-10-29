@@ -1,0 +1,55 @@
+body {
+  margin: 20px;
+  padding: 0
+}
+
+header {
+  background-color: #F0F0F0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 140px;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+nav {
+  margin-left: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #707070;
+  padding: 0 20px 0 0;
+  margin-left: 20px;
+}
+
+.my-account {
+  margin-left: auto;
+}
+
+a,
+a:visited {
+  color: #707070;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00AFEF;
+  text-decoration: underline;
+}
