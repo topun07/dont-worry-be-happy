@@ -53,3 +53,5 @@ function stepSeven() {
   iceCreamCone.hasSprinkles = true;
   return iceCreamCone;
 }
+
+stepSeven();
