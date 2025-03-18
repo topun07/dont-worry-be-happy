@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>SSGeek online store</title>
+    <link rel="icon" href="./icon/favicon-alien.ico" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <!-- Scripts -->
+    <script src="script/productService.js"></script>
+    <script src="script/app.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <main>
+        <header>
+          <img src="img/superhero.png" alt="SSGeek Logo" class="logo" />
+
+          <nav>
+            <div id="message-window" class="hidden"></div>
+            <div class="nav-left">
+              <a href="#">Home</a>
+              <a href="#">Cart</a>
+            </div>
+            <div class="nav-right">
+              <a href="#">Logout</a>
+            </div>
+          </nav>
+        </header>
+
+        <div id="search-container">
+          <input
+            type="text"
+            id="search-box"
+            placeholder="Search for a product..."
+          />
+        </div>
+
+        <section id="product-cards"></section>
+
+        <footer>
+          <p>&copy; 2025 SSGeek Online Store. All rights reserved.</p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

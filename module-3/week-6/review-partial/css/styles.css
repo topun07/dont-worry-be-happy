@@ -1,0 +1,84 @@
+
+.item-image, .item-text {
+    font-size: 200px;
+    margin-left: 20px;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+
+.item-grid {
+    width: 100%;
+    /* set up grid here */
+    display: grid;
+    grid-template-columns: 3fr 5fr 2fr;
+    grid-template-areas:
+        "cheers-image-div cheers-word-div ."
+        "love-image-div love-word-div ."
+        "music-image-div music-word-div mouse-coords-div";
+
+}
+
+.image-col {
+    grid-area: image-col;
+}
+
+.text-col {
+    grid-area: words-col;
+}
+
+#cheers-image-div {
+    grid-area: cheers-image-div;
+}
+
+#love-image-div {
+    grid-area: love-image-div;
+}
+
+#music-image-div {
+    grid-area: music-image-div;
+}
+
+
+#cheers-word-div {
+    grid-area: cheers-word-div;
+}
+
+#love-word-div {
+    grid-area: love-word-div;
+}
+
+#music-word-div {
+    grid-area: music-word-div;
+}
+
+.hide {
+    display: none;
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+.mouse-coords {
+    grid-area: mouse-coords-div;
+    font-size: 50px;
+    border: 1px solid black;
+    width: 150px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#x-pos, #y-pos {
+    padding-left: 10px;
+}

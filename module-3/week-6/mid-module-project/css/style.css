@@ -1,0 +1,218 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Adjust as needed */
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100; /* Ensures it stays above other elements */
+}
+
+.logo {
+  max-width: 400px;
+  height: 120px;
+}
+
+/* Adjust body padding to prevent content from being hidden behind the fixed header */
+body {
+  padding-top: 100px; /* Adjust based on header height */
+}
+
+nav {
+  position: sticky;
+  top: 5px; /* Adjust based on header height */
+  left: 0;
+  right: 50px;
+  width: 100%;
+  background-color: blueviolet;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.nav-left {
+  display: flex;
+}
+
+.nav-right {
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+/* Adjust body padding so content isn't hidden behind fixed nav */
+body {
+  padding-top: 170px; /* Adjust based on header and nav height */
+}
+
+/* Ensure the page takes up at least the full viewport height */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Allows main content to take up remaining space */
+}
+
+/* Style the footer */
+footer {
+  background-color: blueviolet;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: relative; /* Keeps it at the bottom when content overflows */
+  bottom: 0;
+}
+
+main {
+  flex: 1; /* Allows main to take available space */
+  overflow-y: auto; /* Enables vertical scrolling when content overflows */
+  padding: 20px;
+}
+
+/* Style the product card container */
+#product-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to new rows on smaller screens */
+  justify-content: center; /* Centers cards in the available space */
+  gap: 20px; /* Adds spacing between cards */
+  padding: 20px;
+}
+
+/* Style individual product cards */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: calc(25% - 20px); /* Ensures 4 cards per row with spacing */
+  min-width: 200px; /* Prevents cards from shrinking too much */
+  max-width: 300px; /* Prevents excessive growth on wide screens */
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Make cards interactive on hover */
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure product images are responsive */
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Style product names */
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Style prices */
+.price {
+  font-size: 16px;
+  color: #e44d26;
+  font-weight: bold;
+}
+
+/* Style the cart icon */
+.cart i {
+  font-size: 24px;
+  color: #4caf50;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.cart i:hover {
+  color: #388e3c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .product-card {
+    width: calc(33.33% - 20px); /* 3 cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 20px); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%; /* 1 card per row on small screens */
+  }
+}
+
+#search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#search-box {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Message Window */
+#message-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  min-width: 200px;
+  display: none;
+}
+
+/* Show message window */
+#message-window:not(.hidden) {
+  display: block;
+}
+
+/* Ensure nav has relative positioning */
+nav {
+  position: relative;
+}

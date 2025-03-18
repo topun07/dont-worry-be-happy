@@ -1,0 +1,42 @@
+/*
+    style.css - this stylesheet is linked from index.html to apply styles to the products home page.
+    Add all of your custom styles here.
+*/
+
+.product-card {
+    background-color: yellow;
+    border: 1px solid black;
+    margin-bottom: 12px;
+    padding: 3px;
+
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-areas:
+        "sku             price"
+        "name            name"
+        "image           image"
+        ".               cart";
+}
+
+div.sku {
+    grid-area: sku;
+}
+
+div.price {
+    grid-area: price;
+    text-align: right;
+}
+
+div.product-name {
+    grid-area: name;
+}
+
+div.product-image {
+    grid-area: image;
+    text-align: center;
+}
+
+div.cart {
+    grid-area: cart;
+    text-align: right;
+}

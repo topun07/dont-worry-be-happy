@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Employee Table</h1>
+
+  <label for="filter">Filter by Last Name:</label>
+  <input type="text" id="filter" onkeyup="onKeyPress(value)" placeholder="Enter last name">
+
+  <table id="employeeTable">
+    <thead>
+      <tr>
+        <th onclick="sortEmployees('firstName')">First Name</th>
+        <th onclick="sortEmployees('lastName')">Last Name</th>
+        <th onclick="sortEmployees('years')">Years of Employment</th>
+        <th onclick="sortEmployees('department')">Department</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <div id="averageEmployment">Average Employment Length: <span id="avgYears"></span> years</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

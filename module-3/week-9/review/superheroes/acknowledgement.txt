@@ -1,0 +1,2 @@
+All data is taken from https://www.databasestar.com/sample-database-superheroes/ although I modified it to use the default schema, 
+and also to switch from British to American spelling conventions.

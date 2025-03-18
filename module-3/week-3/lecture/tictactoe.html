@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .board { display: grid; grid-template-columns: repeat(3, 100px); gap: 5px; margin: 20px auto; }
+        .cell { width: 100px; height: 100px; font-size: 2em; cursor: pointer; border: 1px solid #333; display: flex; align-items: center; justify-content: center; }
+        .status { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div id="board" class="board"></div>
+    <div id="status" class="status">Current Player: X</div>
+    <script>
+        const boardElement = document.getElementById('board');
+        const statusElement = document.getElementById('status');
+        let board = Array(9).fill(null);
+        let currentPlayer = 'X';
+        let gameActive = true;
+
+        // Initialize the board
+        boardElement.innerHTML = board.map((_, i) => `<div class="cell" onclick="makeMove(${i})"></div>`).join('');
+
+        function makeMove(index) {
+            if (board[index] || !gameActive) return;
+            board[index] = currentPlayer;
+            updateBoard();
+
+            if (checkWinner()) {
+                statusElement.textContent = `Player ${currentPlayer} wins!`;
+                gameActive = false;
+            } else if (board.every(cell => cell)) {
+                statusElement.textContent = "It's a tie!";
+                gameActive = false;
+            } else {
+                currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+                statusElement.textContent = `Current Player: ${currentPlayer}`;
+            }
+        }
+
+        function updateBoard() {
+            board.forEach((value, index) => {
+                boardElement.children[index].textContent = value;
+            });
+        }
+
+        function checkWinner() {
+            const winPatterns = [
+                [0, 1, 2], [3, 4, 5], [6, 7, 8], // rows
+                [0, 3, 6], [1, 4, 7], [2, 5, 8], // columns
+                [0, 4, 8], [2, 4, 6]             // diagonals
+            ];
+            return winPatterns.some(pattern => 
+                pattern.every(index => board[index] === currentPlayer)
+            );
+        }
+    </script>
+</body>
+</html>
